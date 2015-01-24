@@ -1,0 +1,18 @@
+/* Custom styles for columns*/
+
+#menu li {
+  display: inline;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Make columns!*/
+.column-container {
+  /* Count and width:  */
+  -webkit-columns: 3 150px;
+     -moz-columns: 3 150px;
+          columns: 3 150px;
+}
