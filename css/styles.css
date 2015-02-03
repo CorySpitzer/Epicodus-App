@@ -1,8 +1,39 @@
-/* Custom styles for columns*/
+/* Custom styles for Epicodus columns layout test 
+   
+With help from:
+  css-tricks.com/guide-responsive-friendly-css-columns/
+  csswizardry.com/2011/01/create-a-centred-horizontal-navigation/
+  developer.mozilla.org/en-US/docs/Web/CSS/:hover
+*/
+
+#menu {
+  background-color: lightblue;
+}
+
+ul {
+  text-align: left;
+}
 
 #menu li {
   display: inline;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 2px;
+  background-color: lightgreen;
+  list-style-type: none;
 }
+
+li a {
+  display: inline-block;
+  padding: 7px;
+  text-decoration: none;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+
 
 em {
   font-style: normal;
@@ -15,4 +46,25 @@ em {
   -webkit-columns: 3 150px;
      -moz-columns: 3 150px;
           columns: 3 150px;
+  -webkit-column-gap: 3em;
+     -moz-column-gap: 3em;
+          column-gap: 3em;
+  background-color: lightgray;
+  /* Rounded corners from 
+  css-tricks.com/snippets/css/rounded-corners/ */
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px; /* future proofing */
+}
+
+.column-container #col1 {
+  background-color: lightpink;
+}
+
+.column-container #col2 {
+  background-color: aquamarine; 
+}
+
+.column-container #col3 {
+  background-color: coral;
 }
