@@ -50,11 +50,15 @@ em {
      -moz-column-gap: 3em;
           column-gap: 3em;
   background-color: lightgray;
+
+}
+
+.column-container, #col1, #col2, #col3 {  
   /* Rounded corners from 
   css-tricks.com/snippets/css/rounded-corners/ */
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px; /* future proofing */
+  -webkit-border-radius: 9px;
+     -moz-border-radius: 9px;
+          border-radius: 9px;
 }
 
 .column-container #col1 {
